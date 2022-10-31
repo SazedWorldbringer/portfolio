@@ -3,11 +3,9 @@ const SwordIcon = props => {
     <svg
       width={20}
       height={20}
-      xmlns="http://www.w3.org/2000/svg"
-      xmlnsXlink="http://www.w3.org/1999/xlink"
-      // viewBox="0 0 290.226 290.226"
       viewBox="0 0 290.226 290.226"
       className="w-5 inline-block transition-transform group-hover:rotate-[20deg]"
+      fill="currentColor"
       {...props}
     >
       <g>
