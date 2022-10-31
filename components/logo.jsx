@@ -17,7 +17,7 @@ const LogoBox = styled.span`
   }
 
   &:hover > svg {
-    transform: rotate(-20deg);
+    transform: rotate(20deg);
   }
 `
 
@@ -31,7 +31,7 @@ const Logo = () => {
             color={useColorModeValue('gray.800', 'whiteAlpha.900')}
             fontFamily="M PLUS Rounded 1c"
             fontWeight="bold"
-            mr={3}
+            ml={3}
           >
             Atharva Pardeshi
           </Text>
