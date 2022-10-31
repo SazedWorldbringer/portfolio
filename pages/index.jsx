@@ -5,6 +5,7 @@ import {
   Image,
   useColorModeValue
 } from '@chakra-ui/react'
+import Section from '../components/section'
 
 const Page = () => {
   return (
@@ -18,7 +19,6 @@ const Page = () => {
       >
         Hello, I&apos;m a full-stack developer based in India!
       </Box>
-
       <Box display={{ md: 'flex' }}>
         <Box flexGrow={1}>
           <Heading as={'h2'} variant="page-title">
@@ -44,6 +44,12 @@ const Page = () => {
           />
         </Box>
       </Box>
+      <Section delay={0.1}>
+        <Heading as="h3" variant={'section-title'}>
+          Work
+        </Heading>
+        <p>Paragraph</p>
+      </Section>{' '}
     </Container>
   )
 }
