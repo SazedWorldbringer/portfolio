@@ -18,7 +18,7 @@ import { HamburgerIcon } from '@chakra-ui/icons'
 
 const LinkItem = ({ href, path, children }) => {
   const active = path === href
-  const inactiveColor = useColorModeValue('gray.200', 'whiteAlpha.900')
+  const inactiveColor = useColorModeValue('gray200', 'whiteAlpha.900')
 
   return (
     <NextLink href={href}>
@@ -46,7 +46,37 @@ const Navbar = props => {
       zIndex={1}
       {...props}
     >
-      Navbar
+      <Container
+        display={'flex'}
+        p={2}
+        maxW={'container.md'}
+        flexWrap="wrap"
+        alignItems={'center'}
+        justifyContent="space-between"
+      >
+        <Flex align={'center'} mr={5}>
+          <Heading as={'h1'} size={'lg'} letterSpacing="tighter">
+            <Logo />
+          </Heading>
+        </Flex>
+
+        <Stack
+          direction={{ base: 'column', md: 'row' }}
+          display={{ base: 'none', md: 'flex' }}
+          width={{ base: 'full', md: 'auto' }}
+          alignItems="center"
+          flexGrow={1}
+          mt={{ base: 4, md: 0 }}
+        >
+          <LinkItem href={'/works'} path={path}>
+            Works
+          </LinkItem>
+
+          <LinkItem href={'/posts'} path={path}>
+            Posts
+          </LinkItem>
+        </Stack>
+      </Container>
     </Box>
   )
 }
