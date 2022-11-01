@@ -63,7 +63,7 @@ const Page = () => {
           <NextLink href="https://github.com/SazedWorldbringer/dotfiles">
             <Link>Vim</Link>
           </NextLink>{' '}
-          (can't forget to put that here :wink:).
+          (can't forget to put that here :wink: )
         </Paragraph>
 
         <Box textAlign={'center'} my={4}>
