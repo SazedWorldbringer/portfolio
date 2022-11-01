@@ -1,3 +1,4 @@
+import { AnimatePresence, motion } from 'framer-motion'
 import {
   IconButton,
   Tooltip,
@@ -10,21 +11,32 @@ const ThemeToggleButton = () => {
   const { toggleColorMode } = useColorMode()
 
   return (
-    <Tooltip
-      hasArrow
-      label="Change theme"
-      openDelay={300}
-      closeDelay={300}
-      bg={useColorModeValue('purple.400', 'orange.200')}
-      rounded="lg"
-    >
-      <IconButton
-        aria-label="Toggle theme"
-        colorScheme={useColorModeValue('purple', 'orange')}
-        icon={useColorModeValue(<MoonIcon />, <SunIcon />)}
-        onClick={toggleColorMode}
-      />
-    </Tooltip>
+    <AnimatePresence exitBeforeEnter initial={false}>
+      <Tooltip
+        hasArrow
+        label="Change theme"
+        openDelay={300}
+        closeDelay={300}
+        bg={useColorModeValue('purple.400', 'orange.200')}
+        rounded="lg"
+      >
+        <motion.div
+          style={{ display: 'inline-block' }}
+          key={useColorModeValue('light', 'dark')}
+          initial={{ y: -20, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          exit={{ y: 20, opacity: 0 }}
+          transition={{ duration: 0.2 }}
+        >
+          <IconButton
+            aria-label="Toggle theme"
+            colorScheme={useColorModeValue('purple', 'orange')}
+            icon={useColorModeValue(<MoonIcon />, <SunIcon />)}
+            onClick={toggleColorMode}
+          />
+        </motion.div>
+      </Tooltip>
+    </AnimatePresence>
   )
 }
 
