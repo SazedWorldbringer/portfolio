@@ -93,6 +93,7 @@ const Page = () => {
         <Heading as={'h3'} variant="section-title">
           I ♥
         </Heading>
+        <Paragraph>Reading, Art, Drawing, Music, Exercising.</Paragraph>
       </Section>
     </Container>
   )
