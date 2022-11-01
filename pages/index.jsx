@@ -11,6 +11,7 @@ import {
 import Paragraph from '../components/paragraph'
 import Section from '../components/section'
 import { ChevronRightIcon } from '@chakra-ui/icons'
+import { BioSection, BioYear } from '../components/bio'
 
 const Page = () => {
   return (
@@ -72,6 +73,26 @@ const Page = () => {
             </Button>
           </NextLink>
         </Box>
+      </Section>
+
+      <Section delay={0.2}>
+        <Heading as="h3" variant={'section-title'}>
+          Bio
+        </Heading>
+        <BioSection>
+          <BioYear>2003</BioYear>
+          Born in Nashik, Maharashtra, India.
+        </BioSection>
+        <BioSection>
+          <BioYear>2021</BioYear>
+          Graduated High School, 12th HSC from KTHM College, Nashik.
+        </BioSection>
+      </Section>
+
+      <Section delay={0.3}>
+        <Heading as={'h3'} variant="section-title">
+          I ♥
+        </Heading>
       </Section>
     </Container>
   )
