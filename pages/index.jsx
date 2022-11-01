@@ -1,11 +1,16 @@
+import NextLink from 'next/link'
 import {
   Box,
+  Button,
   Container,
   Heading,
   Image,
+  Link,
   useColorModeValue
 } from '@chakra-ui/react'
+import Paragraph from '../components/paragraph'
 import Section from '../components/section'
+import { ChevronRightIcon } from '@chakra-ui/icons'
 
 const Page = () => {
   return (
@@ -48,8 +53,26 @@ const Page = () => {
         <Heading as="h3" variant={'section-title'}>
           Work
         </Heading>
-        <p>Paragraph</p>
-      </Section>{' '}
+        <Paragraph>
+          Atharva is a font-end developer based in India with a passion for
+          writing software that is easy to read, maintain and debug. He is
+          naturally curious, humble and ready to adapt. When not online, he
+          loves reading Sci-fi/Fantasy books, scratching his head trying to
+          understand documentation. And he uses{' '}
+          <NextLink href="https://github.com/SazedWorldbringer/dotfiles">
+            <Link>Vim</Link>
+          </NextLink>{' '}
+          (can't forget to put that here :wink:).
+        </Paragraph>
+
+        <Box textAlign={'center'} my={4}>
+          <NextLink href={'/works'}>
+            <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
+              My Portfolio
+            </Button>
+          </NextLink>
+        </Box>
+      </Section>
     </Container>
   )
 }
