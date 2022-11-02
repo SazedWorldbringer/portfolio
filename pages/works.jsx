@@ -33,6 +33,72 @@ const Works = () => {
             tutorial.
           </WorkGridItem>
         </Section>
+
+        <Section>
+          <WorkGridItem
+            id="coolcard"
+            title="Card Hover Effect"
+            thumbnail={thumbnailCoolCards}
+          >
+            A cool card hover effect written following bedimcode's YouTube
+            tutorial.
+          </WorkGridItem>
+        </Section>
+
+        <Section>
+          <WorkGridItem
+            id="coolcard"
+            title="Card Hover Effect"
+            thumbnail={thumbnailCoolCards}
+          >
+            A cool card hover effect written following bedimcode's YouTube
+            tutorial.
+          </WorkGridItem>
+        </Section>
+
+        <Section>
+          <WorkGridItem
+            id="coolcard"
+            title="Card Hover Effect"
+            thumbnail={thumbnailCoolCards}
+          >
+            A cool card hover effect written following bedimcode's YouTube
+            tutorial.
+          </WorkGridItem>
+        </Section>
+
+        <Section>
+          <WorkGridItem
+            id="coolcard"
+            title="Card Hover Effect"
+            thumbnail={thumbnailCoolCards}
+          >
+            A cool card hover effect written following bedimcode's YouTube
+            tutorial.
+          </WorkGridItem>
+        </Section>
+
+        <Section>
+          <WorkGridItem
+            id="coolcard"
+            title="Card Hover Effect"
+            thumbnail={thumbnailCoolCards}
+          >
+            A cool card hover effect written following bedimcode's YouTube
+            tutorial.
+          </WorkGridItem>
+        </Section>
+
+        <Section>
+          <WorkGridItem
+            id="coolcard"
+            title="Card Hover Effect"
+            thumbnail={thumbnailCoolCards}
+          >
+            A cool card hover effect written following bedimcode's YouTube
+            tutorial.
+          </WorkGridItem>
+        </Section>
       </SimpleGrid>
     </Container>
   )
