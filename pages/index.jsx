@@ -25,7 +25,7 @@ const Page = () => {
           mb={6}
           textAlign="center"
         >
-          Hello, I`&apos;`m a full-stack developer based in India!
+          Hello, I&apos;m a full-stack developer based in India!
         </Box>
         <Box display={{ md: 'flex' }}>
           <Box flexGrow={1}>
