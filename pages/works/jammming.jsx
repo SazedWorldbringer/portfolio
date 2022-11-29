@@ -13,7 +13,7 @@ const Work = () => {
         </Title>
         <P>
           An app that uses the Spotify api to make searching and adding songs to
-          your playlist just a click away.
+          your playlist just a click away. I intend to turn this into a full fledged, keyboard controlled music playing app.
         </P>
         <List ml={4} my={4}>
           <ListItem>
@@ -22,6 +22,14 @@ const Work = () => {
               jammming-sazed.netlify.app <ExternalLinkIcon mx={2} />
             </Link>
           </ListItem>
+
+          <ListItem>
+            <Meta>Github</Meta>
+            <Link target="_blank" href="https://github.com/SazedWorldbringer/the-eolian">
+              SazedWorldbringer/jammming <ExternalLinkIcon mx={2} />
+            </Link>
+          </ListItem>
+
           <ListItem>
             <Meta>Stack</Meta>
             <span>React.js, Spotify API</span>
