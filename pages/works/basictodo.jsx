@@ -18,7 +18,7 @@ const Work = () => {
         <List ml={4} my={4}>
           <ListItem>
             <Meta>Website</Meta>
-            <Link target="_blank" href="https://npmjs.com/packages/basic-todo">
+            <Link target="_blank" href="https://npmjs.com/package/basic-todo">
               npmjs.com/packages/basic-todo <ExternalLinkIcon mx={2} />
             </Link>
           </ListItem>
