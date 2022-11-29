@@ -6,10 +6,10 @@ import Layout from '../../components/layouts/article'
 
 const Work = () => {
   return (
-    <Layout title="Jammming">
+    <Layout title="Basic-todo">
       <Container>
         <Title>
-          Basic-todo <Badge>Nov 2022</Badge>
+          Basic CLI Todo-list <Badge>Nov 2022</Badge>
         </Title>
         <P>
           A command line todo list app for people who call the terminal their home.
