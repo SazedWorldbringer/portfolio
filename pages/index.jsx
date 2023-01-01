@@ -63,7 +63,7 @@ const Page = () => {
             adapt. When not online, he loves reading Sci-fi/Fantasy books,
             scratching his head trying to understand documentation. And he uses{' '}
             <NextLink
-              href="https://github.com/SazedWorldbringer"
+              href="https://github.com/SazedWorldbringer/nvim-dots"
               passHref
               scroll={false}
             >
