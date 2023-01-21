@@ -7,15 +7,17 @@ import { Analytics } from '@vercel/analytics/react';
 
 const Website = ({ Component, pageProps, router }) => {
   return (
-    <ChakraProvider theme={theme}>
-      <Fonts />
-      <Layout router={router}>
-        <AnimatePresence mode="wait" initial={true}>
-          <Component {...pageProps} key={router.route} />
-          <Analytics />
-        </AnimatePresence>
-      </Layout>
-    </ChakraProvider>
+    <>
+      <ChakraProvider theme={theme}>
+        <Fonts />
+        <Layout router={router}>
+          <AnimatePresence mode="wait" initial={true}>
+            <Component {...pageProps} key={router.route} />
+          </AnimatePresence>
+        </Layout>
+      </ChakraProvider>
+      <Analytics />
+    </>
   )
 }
 
