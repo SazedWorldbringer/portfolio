@@ -74,7 +74,7 @@ export type MotionTextVariants = {
         ) => TargetAndTransition | string);
   };
 };
-/* eslint-disable @typescript-eslint/no-unused-vars */
+/* eslint-enable @typescript-eslint/no-unused-vars */
 
 export type MotionTextRenderers = {
   char?: any;
