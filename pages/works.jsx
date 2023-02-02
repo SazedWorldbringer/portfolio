@@ -3,9 +3,9 @@ import Section from '../components/section'
 import { WorkGridItem } from '../components/grid-item'
 import Layout from '../components/layouts/article'
 
-import thumbCoolCards from '../public/images/works/cool-cards.png'
 import thumbJammming from '../public/images/works/jammming.png'
 import thumbTodo from '../public/images/works/todo.png'
+import thumbAtleast52 from '../public/images/works/atleast52.gif'
 
 const Works = () => {
   return (
@@ -28,77 +28,21 @@ const Works = () => {
 
           <Section>
             <WorkGridItem
+              id="atleast52"
+              title="At least 52"
+              thumbnail={thumbAtleast52}
+            >
+              At least 52 Generative Artworks 2023
+            </WorkGridItem>
+          </Section>
+
+          <Section>
+            <WorkGridItem
               id="basictodo"
               title="Basic CLI Todo"
               thumbnail={thumbTodo}
             >
               Todo list for my terminal buddies.
-            </WorkGridItem>
-          </Section>
-
-          <Section>
-            <WorkGridItem
-              id="coolcard"
-              title="Card Hover Effect"
-              thumbnail={thumbCoolCards}
-            >
-              A cool card hover effect written following bedimcode's YouTube
-              tutorial.
-            </WorkGridItem>
-          </Section>
-
-          <Section>
-            <WorkGridItem
-              id="coolcard"
-              title="Card Hover Effect"
-              thumbnail={thumbCoolCards}
-            >
-              A cool card hover effect written following bedimcode's YouTube
-              tutorial.
-            </WorkGridItem>
-          </Section>
-
-          <Section>
-            <WorkGridItem
-              id="coolcard"
-              title="Card Hover Effect"
-              thumbnail={thumbCoolCards}
-            >
-              A cool card hover effect written following bedimcode's YouTube
-              tutorial.
-            </WorkGridItem>
-          </Section>
-
-          <Section>
-            <WorkGridItem
-              id="coolcard"
-              title="Card Hover Effect"
-              thumbnail={thumbCoolCards}
-            >
-              A cool card hover effect written following bedimcode's YouTube
-              tutorial.
-            </WorkGridItem>
-          </Section>
-
-          <Section>
-            <WorkGridItem
-              id="coolcard"
-              title="Card Hover Effect"
-              thumbnail={thumbCoolCards}
-            >
-              A cool card hover effect written following bedimcode's YouTube
-              tutorial.
-            </WorkGridItem>
-          </Section>
-
-          <Section>
-            <WorkGridItem
-              id="coolcard"
-              title="Card Hover Effect"
-              thumbnail={thumbCoolCards}
-            >
-              A cool card hover effect written following bedimcode's YouTube
-              tutorial.
             </WorkGridItem>
           </Section>
         </SimpleGrid>
