@@ -13,6 +13,7 @@ import Layout from '../components/layouts/article'
 import Paragraph from '../components/paragraph'
 import Section from '../components/section'
 import { BioSection, BioYear } from '../components/bio'
+import TextEffectOne from '../components/animation/TextEffect'
 
 const Page = () => {
   return (
@@ -30,7 +31,13 @@ const Page = () => {
         <Box display={{ md: 'flex' }}>
           <Box flexGrow={1}>
             <Heading as={'h2'} variant="page-title">
-              Atharva Pardeshi
+              <TextEffectOne
+                text={'Atharva Pardeshi'}
+                initial="state1"
+                animate="state2"
+                exit="state1"
+                whileHover="state1"
+              />
             </Heading>
             <p>Digital Craftsman ( Artist / Developer / Designer )</p>
           </Box>
