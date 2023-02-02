@@ -5,8 +5,8 @@
     "no-unused-vars": [
       "error",
       {
-        "argsIgnorePattern": "[iI]gnored",
-        "varsIgnorePattern": "[iI]gnored"
+        "argsIgnorePattern": "[iI]gnore",
+        "varsIgnorePattern": "[iI]gnore"
       }
     ],
     "react/no-unescaped-entities": 0
