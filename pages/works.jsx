@@ -2,6 +2,7 @@ import { Container, Heading, SimpleGrid } from '@chakra-ui/react'
 import Section from '../components/section'
 import { WorkGridItem } from '../components/grid-item'
 import Layout from '../components/layouts/article'
+import TextEffectOne from '../components/animation/TextEffect'
 
 import thumbJammming from '../public/images/works/jammming.png'
 import thumbTodo from '../public/images/works/todo.png'
@@ -11,8 +12,14 @@ const Works = () => {
   return (
     <Layout>
       <Container>
-        <Heading as={'h3'} fontSize={20} mb={4}>
-          Works
+        <Heading as={'h2'} mb={4}>
+          <TextEffectOne
+            text={'Work'}
+            initial="state1"
+            animate="state2"
+            exit="state1"
+            whileHover="state1"
+          />
         </Heading>
 
         <SimpleGrid columns={[1, 1, 2]} gap={6}>
