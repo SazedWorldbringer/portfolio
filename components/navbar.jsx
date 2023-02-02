@@ -73,9 +73,16 @@ const Navbar = props => {
             Works
           </LinkItem>
 
-          <LinkItem href={'/posts'} path={path}>
-            Posts
-          </LinkItem>
+          <NextLink
+            href="https://atharvarants.vercel.app"
+            passHref
+          >
+            <Link
+              color='gray.200'
+            >
+              Posts
+            </Link>
+          </NextLink>
         </Stack>
 
         <Box flex={1} textAlign="right">
@@ -95,9 +102,14 @@ const Navbar = props => {
                 <NextLink href={'/works'} passHref>
                   <MenuItem as={Link}>Works</MenuItem>
                 </NextLink>
-                <NextLink href={'/posts'} passHref>
-                  <MenuItem as={Link}>Posts</MenuItem>
-                </NextLink>
+                <MenuItem
+                  as={Link}
+                  href={
+                    'https://atharvarants.vercel.app'
+                  }
+                >
+                  Posts
+                </MenuItem>
                 <MenuItem
                   as={Link}
                   href={
