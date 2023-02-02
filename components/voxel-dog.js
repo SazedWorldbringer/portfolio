@@ -12,7 +12,7 @@ const VoxelDog = () => {
   const refContainer = useRef()
   const [loading, setLoading] = useState(true)
   const [renderer, setRenderer] = useState()
-  const [_camera, setCamera] = useState()
+  const [cameraIgnore, setCamera] = useState()
   const [target] = useState(new THREE.Vector3(-0.5, 1.2, 0))
   const [initialCameraPosition] = useState(
     new THREE.Vector3(
@@ -22,7 +22,7 @@ const VoxelDog = () => {
     )
   )
   const [scene] = useState(new THREE.Scene())
-  const [_controls, setControls] = useState()
+  const [controlsIgnore, setControls] = useState()
 
   const handleWindowResize = useCallback(() => {
     const { current: container } = refContainer
