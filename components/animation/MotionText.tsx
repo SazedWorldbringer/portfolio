@@ -49,27 +49,27 @@ export type MotionTextVariants = {
     [key: string]:
       | TargetAndTransition
       | ((
-          custom: CharContext,
-          current: Target,
-          velocity: Target
+          custom?: CharContext,
+          current?: Target,
+          velocity?: Target
         ) => TargetAndTransition | string);
   };
   word?: {
     [key: string]:
       | TargetAndTransition
       | ((
-          custom: WordContext,
-          current: Target,
-          velocity: Target
+          custom?: WordContext,
+          current?: Target,
+          velocity?: Target
         ) => TargetAndTransition | string);
   };
   line?: {
     [key: string]:
       | TargetAndTransition
       | ((
-          custom: LineContext,
-          current: Target,
-          velocity: Target
+          custom?: LineContext,
+          current?: Target,
+          velocity?: Target
         ) => TargetAndTransition | string);
   };
 };
