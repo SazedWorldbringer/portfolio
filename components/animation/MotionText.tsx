@@ -44,37 +44,35 @@ const DEFAULT_RENDERERS = {
   }
 };
 
-/* eslint-disable @typescript-eslint/no-unused-vars */
 export type MotionTextVariants = {
   char?: {
     [key: string]:
       | TargetAndTransition
       | ((
-          custom: CharContext,
-          current: Target,
-          velocity: Target
+          customIgnore: CharContext,
+          currentIgnore: Target,
+          velocityIgnore: Target
         ) => TargetAndTransition | string);
   };
   word?: {
     [key: string]:
       | TargetAndTransition
       | ((
-          custom: WordContext,
-          current: Target,
-          velocity: Target
+          customIgnore: WordContext,
+          currentIgnore: Target,
+          velocityIgnore: Target
         ) => TargetAndTransition | string);
   };
   line?: {
     [key: string]:
       | TargetAndTransition
       | ((
-          custom: LineContext,
-          current: Target,
-          velocity: Target
+          customIgnore: LineContext,
+          currentIgnore: Target,
+          velocityIgnore: Target
         ) => TargetAndTransition | string);
   };
 };
-/* eslint-enable @typescript-eslint/no-unused-vars */
 
 export type MotionTextRenderers = {
   char?: any;
