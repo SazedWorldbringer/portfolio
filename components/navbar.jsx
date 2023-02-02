@@ -78,7 +78,7 @@ const Navbar = props => {
             passHref
           >
             <Link
-              color='gray.200'
+              color={useColorModeValue('gray200', 'whiteAlpha.900')}
             >
               Posts
             </Link>
