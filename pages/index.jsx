@@ -54,7 +54,7 @@ const Page = () => {
               maxWidth="100px"
               display="inline-block"
               borderRadius="full"
-              src="/images/atharva-profile.png"
+              src="/images/spooky-sazed-profile.png"
               alt="Profile image"
             />
           </Box>
