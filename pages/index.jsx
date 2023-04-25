@@ -64,13 +64,15 @@ const Page = () => {
             Work
           </Heading>
           <Paragraph>
-            Atharva is a full-stack developer(with a focus on front-end) based
-            in India with a passion for writing software that is easy to read,
-            maintain and debug. He is naturally curious, humble and ready to
-            adapt. When not online, he loves reading Sci-fi/Fantasy books,
+            Atharva is a full-stack developer(with a focus on front-end) based in India
+            with a passion for writing software that is easy to read, maintain and debug.
+            He is naturally curious, humble and ready to adapt.
+            He also likes spending his time studying core computer science subjects,
+            and exploring tech in visual forms using Processing.
+            When not online, he loves reading Sci-fi/Fantasy books,
             scratching his head trying to understand documentation. And he uses{' '}
             <NextLink
-              href="https://github.com/SazedWorldbringer/nvim-dots"
+              href="https://github.com/SazedWorldbringer/nvim"
               passHref
               scroll={false}
             >
