@@ -86,7 +86,7 @@ const Navbar = props => {
           </NextLink>
 
           <NextLink
-            href="https://atharvarants.vercel.app"
+            href="https://github.com/SazedWorldbringer/portfolio"
             passHref
           >
             <Link
