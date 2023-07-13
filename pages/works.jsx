@@ -6,7 +6,7 @@ import TextEffectOne from '../components/animation/TextEffect'
 
 import thumbJammming from '../public/images/works/jammming.png'
 import thumbTodo from '../public/images/works/todo.png'
-import thumbAtleast52 from '../public/images/works/atleast52.gif'
+import thumbBreadit from '../public/images/works/breadit.png'
 
 const Works = () => {
   return (
@@ -35,11 +35,11 @@ const Works = () => {
 
           <Section>
             <WorkGridItem
-              id="atleast52"
-              title="At least 52"
-              thumbnail={thumbAtleast52}
+              id="breadit"
+              title="Breadit"
+              thumbnail={thumbBreadit}
             >
-              At least 52 Generative Artworks 2023
+              Reddit clone built using Next.js 13 and TypeScript
             </WorkGridItem>
           </Section>
 
