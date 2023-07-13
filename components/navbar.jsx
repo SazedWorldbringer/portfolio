@@ -75,17 +75,6 @@ const Navbar = props => {
           </LinkItem>
 
           <NextLink
-            href="https://github.com/SazedWorldbringer/"
-            passHref
-          >
-            <Link
-              color={useColorModeValue('gray200', 'whiteAlpha.900')}
-            >
-              Posts
-            </Link>
-          </NextLink>
-
-          <NextLink
             href="https://github.com/SazedWorldbringer/portfolio"
             passHref
           >
@@ -93,7 +82,7 @@ const Navbar = props => {
               color={useColorModeValue('gray200', 'whiteAlpha.900')}
               display="inline-flex"
               alignItems="center"
-              style={{gap: 4}}
+              style={{ gap: 4 }}
               pl={2}
             >
               <IoLogoGithub /> Source
