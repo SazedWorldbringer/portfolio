@@ -7,6 +7,7 @@ import TextEffectOne from '../components/animation/TextEffect'
 import thumbJammming from '../public/images/works/jammming.png'
 import thumbTodo from '../public/images/works/todo.png'
 import thumbBreadit from '../public/images/works/breadit.png'
+import thumbGallery from '../public/images/works/image-gallery.png'
 
 const Works = () => {
   return (
@@ -25,6 +26,16 @@ const Works = () => {
         <SimpleGrid columns={[1, 1, 2]} gap={6}>
           <Section>
             <WorkGridItem
+              id="breadit"
+              title="Breadit"
+              thumbnail={thumbBreadit}
+            >
+              Reddit clone built using Next.js 13 and TypeScript
+            </WorkGridItem>
+          </Section>
+
+          <Section>
+            <WorkGridItem
               id="jammming"
               title="Jammming"
               thumbnail={thumbJammming}
@@ -35,11 +46,11 @@ const Works = () => {
 
           <Section>
             <WorkGridItem
-              id="breadit"
-              title="Breadit"
-              thumbnail={thumbBreadit}
+              id="gallery"
+              title="The Karaethon Cycle"
+              thumbnail={thumbGallery}
             >
-              Reddit clone built using Next.js 13 and TypeScript
+              An image gallery built using Next.js and Typescript.
             </WorkGridItem>
           </Section>
 
