@@ -9,7 +9,7 @@ const Work = () => {
     <Layout title="picasso">
       <Container>
         <Title>
-          Picasso
+          Picasso <Badge>June 2023</Badge>
         </Title>
         <P>
           A simple, multiplayer drawing app using Socket.io.
