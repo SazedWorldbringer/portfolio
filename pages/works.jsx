@@ -1,14 +1,25 @@
-import { Container, Heading, SimpleGrid } from '@chakra-ui/react'
+import {
+  Box,
+  Container,
+  Heading,
+  LinkBox,
+  LinkOverlay,
+  SimpleGrid,
+  Text
+} from '@chakra-ui/react'
 import Section from '../components/section'
 import { WorkGridItem } from '../components/grid-item'
 import Layout from '../components/layouts/article'
 import TextEffectOne from '../components/animation/TextEffect'
+import Link from 'next/link'
 
 import thumbJammming from '../public/images/works/jammming.png'
 import thumbTodo from '../public/images/works/todo.png'
 import thumbBreadit from '../public/images/works/breadit.png'
 import thumbGallery from '../public/images/works/image-gallery.png'
 import thumbPicasso from '../public/images/works/picasso.png'
+import thumbGithub from '../public/images/spooky-sazed-profile.png'
+import Image from 'next/image'
 
 const Works = () => {
   return (
@@ -26,11 +37,7 @@ const Works = () => {
 
         <SimpleGrid columns={[1, 1, 2]} gap={6}>
           <Section>
-            <WorkGridItem
-              id="breadit"
-              title="Breadit"
-              thumbnail={thumbBreadit}
-            >
+            <WorkGridItem id="breadit" title="Breadit" thumbnail={thumbBreadit}>
               Reddit clone built using Next.js 13 and TypeScript
             </WorkGridItem>
           </Section>
@@ -56,11 +63,7 @@ const Works = () => {
           </Section>
 
           <Section>
-            <WorkGridItem
-              id="picasso"
-              title="Picasso"
-              thumbnail={thumbPicasso}
-            >
+            <WorkGridItem id="picasso" title="Picasso" thumbnail={thumbPicasso}>
               Multiplayer drawing app.
             </WorkGridItem>
           </Section>
@@ -73,6 +76,28 @@ const Works = () => {
             >
               Todo list for my terminal buddies.
             </WorkGridItem>
+          </Section>
+
+          <Section>
+            <Link href="https://github.com/SazedWorldbringer">
+              <LinkBox cursor={'pointer'}>
+                <Image
+                  src={thumbGithub}
+                  alt="Sazed's GitHub profile"
+                  className="grid-item-thumbnail"
+                  placeholder="blur"
+                  blurDataURL={thumbGithub}
+                />
+                <LinkOverlay href="https://github.com/SazedWorldbringer">
+                  <Text mt={2} fontSize={20}>
+                    SazedWorldbringer
+                  </Text>
+                </LinkOverlay>
+                <Text fontSize={14}>
+                  Check out the rest of my projects on GitHub.
+                </Text>
+              </LinkBox>
+            </Link>
           </Section>
         </SimpleGrid>
       </Container>
