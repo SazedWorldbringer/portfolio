@@ -8,6 +8,7 @@ import thumbJammming from '../public/images/works/jammming.png'
 import thumbTodo from '../public/images/works/todo.png'
 import thumbBreadit from '../public/images/works/breadit.png'
 import thumbGallery from '../public/images/works/image-gallery.png'
+import thumbPicasso from '../public/images/works/picasso.png'
 
 const Works = () => {
   return (
@@ -51,6 +52,16 @@ const Works = () => {
               thumbnail={thumbGallery}
             >
               An image gallery built using Next.js and Typescript.
+            </WorkGridItem>
+          </Section>
+
+          <Section>
+            <WorkGridItem
+              id="picasso"
+              title="Picasso"
+              thumbnail={thumbPicasso}
+            >
+              Multiplayer drawing app.
             </WorkGridItem>
           </Section>
 
