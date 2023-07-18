@@ -17,6 +17,7 @@ import thumbTodo from '../public/images/works/todo.png'
 import thumbBreadit from '../public/images/works/breadit.png'
 import thumbGallery from '../public/images/works/image-gallery.png'
 import thumbPicasso from '../public/images/works/picasso.png'
+import thumbGlitch from '../public/images/works/glitch-01.png'
 import thumbGithub from '../public/images/spooky-sazed-profile.png'
 import Image from 'next/image'
 
@@ -36,7 +37,21 @@ const Works = () => {
 
         <SimpleGrid columns={[1, 1, 2]} gap={6}>
           <Section>
-            <WorkGridItem id="breadit" title="Breadit" thumbnail={thumbBreadit}>
+            <WorkGridItem
+              id="glitch"
+              title="Glitch"
+              thumbnail={thumbGlitch}
+            >
+              A URL shortener written in Go and Svelte.
+            </WorkGridItem>
+          </Section>
+
+          <Section>
+            <WorkGridItem
+              id="breadit"
+              title="Breadit"
+              thumbnail={thumbBreadit}
+            >
               Reddit clone built using Next.js 13 and TypeScript
             </WorkGridItem>
           </Section>
