@@ -12,8 +12,9 @@ const Work = () => {
           Picasso <Badge>June 2023</Badge>
         </Title>
         <P>
-          A simple, multiplayer drawing app using Socket.io.
-          This was built for me to try and dabble with web sockets.
+          A simple, real-time drawing application using Next.js for the frontend and Express for the backend.
+          Uses Socket.io, WebSockets technology, to enable collaborative drawing,
+          allowing multiple connected clients to interact and see real-time updates on the shared canvas.
         </P>
         <List ml={4} my={4}>
           <ListItem>
@@ -25,7 +26,7 @@ const Work = () => {
 
           <ListItem>
             <Meta>Stack</Meta>
-            <span>Next.js, Typescript, Socket.io</span>
+            <span>Next.js, Typescript, Express, Socket.io</span>
           </ListItem>
         </List>
 

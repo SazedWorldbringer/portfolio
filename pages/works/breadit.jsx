@@ -12,9 +12,10 @@ const Work = () => {
           Breadit <Badge>June 2023</Badge>
         </Title>
         <P>
-          A fullstack Reddit clone built using Next.js 13 (app router), TypeScript, TailwindCSS, etc.
-          Authentication using NextAuth and Google, Datafetching using TanStack Query. Features infinite scrolling.
-          Make communities, create and engage with posts.
+          A fullstack Reddit clone built using Next.js 13 (app router), TypeScript, TailwindCSS,
+          and other powerful, modern technologies that delivers an immersive, feature-rich social media experience.
+          Uses NextAuth for secure authentication using Google accounts.
+          Leveraging the efficiency of Tanstack Query, data fetching is optimized for seamless user interactions.
         </P>
         <List ml={4} my={4}>
           <ListItem>
@@ -33,7 +34,7 @@ const Work = () => {
 
           <ListItem>
             <Meta>Stack</Meta>
-            <span>Next.js 13, TypeScript, TailwindCSS, shadcn ui, Prisma, etc.</span>
+            <span>Next.js 13, TypeScript, shadcn-ui, Prisma, etc.</span>
           </ListItem>
         </List>
 

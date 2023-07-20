@@ -12,8 +12,8 @@ const Work = () => {
           Jammming <Badge>Oct 2022</Badge>
         </Title>
         <P>
-          An app that uses the Spotify api to make searching and adding songs to
-          your playlist just a click away. I intend to turn this into a full fledged, keyboard controlled music playing app.
+          A web application built using React and Spotify API
+          to streamline playlist creation through seamless authentication using user's Spotify acounts.
         </P>
         <List ml={4} my={4}>
           <ListItem>

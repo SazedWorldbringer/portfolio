@@ -12,7 +12,7 @@ const Work = () => {
           Glitch <Badge>July 2023</Badge>
         </Title>
         <P>
-          A URL shortener application built using the Go Fiber framework.
+          A URL shortener application built using Go, Go Fiber and Svelte.
           Features include rate limiting and URL expiration.
           Client side code is written in Svelte to deliver a dynamic and intuitive user interface.
           Used Redis for efficient data storage and caching, enhancing performance.
@@ -34,7 +34,7 @@ const Work = () => {
 
           <ListItem>
             <Meta>Stack</Meta>
-            <span>Go fiber, Svelte, Typescript, Tailwind.</span>
+            <span>Go fiber, Svelte, Typescript, TailwindCSS.</span>
           </ListItem>
         </List>
 
