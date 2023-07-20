@@ -68,32 +68,16 @@ const Works = () => {
 
           <Section>
             <WorkGridItem
-              id="gallery"
-              title="The Karaethon Cycle"
-              thumbnail={thumbGallery}
+              id="picasso"
+              title="Picasso"
+              thumbnail={thumbPicasso}
             >
-              An image gallery built using Next.js and Typescript.
-            </WorkGridItem>
-          </Section>
-
-          <Section>
-            <WorkGridItem id="picasso" title="Picasso" thumbnail={thumbPicasso}>
               Multiplayer drawing app.
             </WorkGridItem>
           </Section>
 
           <Section>
-            <WorkGridItem
-              id="basictodo"
-              title="Basic CLI Todo"
-              thumbnail={thumbTodo}
-            >
-              Todo list for my terminal buddies.
-            </WorkGridItem>
-          </Section>
-
-          <Section>
-            <Link href="https://github.com/SazedWorldbringer">
+            <Link href="https://github.com/SazedWorldbringer" target="_blank">
               <LinkBox cursor={'pointer'}>
                 <Image
                   src={thumbGithub}
