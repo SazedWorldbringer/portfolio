@@ -102,6 +102,10 @@ const Page = () => {
             <BioYear>2021</BioYear>
             Graduated High School, 12th HSC from KTHM College, Nashik.
           </BioSection>
+          <BioSection>
+            <BioYear>2023</BioYear>
+            Studying Mechanical Engineering at KBT College of Engineering, Nashik.
+          </BioSection>
         </Section>
 
         <Section delay={0.3}>
